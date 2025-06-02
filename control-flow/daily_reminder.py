@@ -14,7 +14,7 @@ match priority:
     case "low":
         message = f"Note: '{task}' is a low priority task"
     case _:
-        message = f"'{task}' has an unknown priority level"
+        message = f"Reminder: '{task}' has an unknown priority level"
 
 # Check if task is time-bound
 if time_bound == "yes":
@@ -23,5 +23,5 @@ else:
     message += ". Consider completing it when you have free time."
 
 # Print the reminder
-print()
+
 print(message)
