@@ -1,4 +1,4 @@
-import unittest
+import unittest 
 from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
@@ -7,11 +7,11 @@ class TestSimpleCalculator(unittest.TestCase):
         """Set up calculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):  # ✅ changed
         self.assertEqual(self.calc.add(2, 3), 5)
         self.assertEqual(self.calc.add(-1, -1), -2)
 
-    def test_subtract(self):
+    def test_subtraction(self):  # ✅ changed
         self.assertEqual(self.calc.subtract(10, 5), 5)
         self.assertEqual(self.calc.subtract(0, 5), -5)
 
